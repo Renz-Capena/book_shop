@@ -40,6 +40,7 @@
                         <?php if($count_cats > 3): ?>
                         <li class="nav-item"><a class="nav-link" href="./?p=view_categories">All Categories</a></li>
                         <?php endif; ?>
+                        <li class="nav-item"><a class="nav-link" href="./?p=customize">Customize</a></li>
                         <li class="nav-item"><a class="nav-link" href="./?p=about">About</a></li>
                     </ul>
                     <div class="d-flex align-items-center">
