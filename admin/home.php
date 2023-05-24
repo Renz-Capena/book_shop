@@ -76,7 +76,7 @@
       }
     }
   ?>
-  <div id="tourCarousel"  class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- <div id="tourCarousel"  class="carousel slide" data-ride="carousel" data-interval="3000">
       <div class="carousel-inner h-100">
           <?php foreach($files as $k => $img): ?>
           <div class="carousel-item  h-100 <?php echo $k == 0? 'active': '' ?>">
@@ -92,5 +92,87 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
       </a>
-  </div>
+  </div> -->
+
+<!-- ============================================================================ -->
+
+
+  <!-- New -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <canvas id="myChart" style="width:100%;max-width:600px;border: 1px solid red"></canvas>
+
+
+  <?php
+
+      $sql = "SELECT c.category, SUM(ol.quantity) AS total_quantity
+          FROM categories c
+          INNER JOIN products p ON c.id = p.category_id
+          LEFT JOIN (
+              SELECT product_id, SUM(quantity) AS quantity
+              FROM order_list
+              GROUP BY product_id
+          ) ol ON p.id = ol.product_id
+          GROUP BY c.category";
+
+      // Execute the query
+      $result = $conn->query($sql);
+
+      if ($result->num_rows > 0) {
+        // Output the results
+        while ($row = $result->fetch_assoc()) {
+            echo "<input type='hidden' id='category' value=".$row["category"].">";
+
+            echo "<input type='hidden' id='quantity' value=".$row["total_quantity"]."><br><br>";
+        }
+      }
+
+  ?>
+
+
+  <script>
+
+  const category = [];
+  const categoryTemp = document.querySelectorAll("#category");
+  categoryTemp.forEach(e => category.push(e.value))
+
+  const quantity = [];
+  const quantityTemp = document.querySelectorAll("#quantity");
+  quantityTemp.forEach(e => quantity.push(e.value))
+
+  const barColors = Array(category.length).fill("#34a2d1");
+
+
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: category,
+      datasets: [{
+        backgroundColor: barColors,
+        data: quantity,
+      }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "Sales report"
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+
+    }
+  });
+
+
+  </script>
+
+
+
+
 </div>
