@@ -2,6 +2,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require_once('inc/header.php') ?>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@200;400&family=Prata&family=Rubik:wght@400;500&display=swap');
+
+  #navigation .nav-link{
+    font-weight: 500;
+  }
+  #navigation .nav-link:hover{
+        color: #4EA217;
+    }
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  .list-group-item.active{
+    background-color: #4EA217;
+  }
+  #navTabs .nav-link.active:focus{
+    color: #66B032;
+  }
+  #navTabs .nav-link{
+    color: grey;
+  }
+</style>
 <body>
 <?php require_once('inc/topBarNav.php') ?>
 <?php $page = isset($_GET['p']) ? $_GET['p'] : 'home';  ?>

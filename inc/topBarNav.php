@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light px-3 py-3">
+<nav class="navbar navbar-expand-lg navbar-light px-3 py-3">
             <div class="container-fluid px-4 px-lg-5 ">
                 <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <a class="navbar-brand" href="./">
@@ -15,7 +15,7 @@
                   </div>
                 </form>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4" id="navigation">
                         <li class="nav-item"><a class="nav-link" aria-current="page" href="./">Home</a></li>
                         <?php 
                         $cat_qry = $conn->query("SELECT * FROM categories where status = 1  limit 3");
@@ -47,9 +47,9 @@
                         <button class="btn btn-outline-dark ml-2" id="login-btn" type="button">Login</button>
                         <?php else: ?>
                         <a class="text-dark mr-2 nav-link" href="./?p=cart">
-                            <i class="bi-cart-fill me-1"></i>
+                            <i class="bi-cart-fill"></i>
                             Cart
-                            <span class="badge bg-dark text-white ms-1 rounded-pill" id="cart-count">
+                            <span class="badge bg-success text-white rounded-pill" id="cart-count">
                               <?php 
                               if(isset($_SESSION['userdata']['id'])):
                                 $count = $conn->query("SELECT SUM(quantity) as items from `cart` where client_id =".$_settings->userdata('id'))->fetch_assoc()['items'];
@@ -62,7 +62,7 @@
                         </a>
                         
                             <a href="./?p=my_account" class="text-dark  nav-link"><b> Hi, <?php echo $_settings->userdata('firstname')?>!</b></a>
-                            <a href="logout.php" class="text-dark  nav-link"><i class="fa fa-sign-out-alt"></i></a>
+                            <a href="logout.php" class="text-danger  nav-link"><i class="fa fa-sign-out-alt"></i></a>
                         <?php endif; ?>
                     </div>
                 </div>

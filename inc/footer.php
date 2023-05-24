@@ -59,9 +59,9 @@
   })
 </script>
 <!-- Footer-->
-<footer class="py-5 bg-dark">
+<footer class="py-3 bg-dark">
             <div class="container">
-              <p class="m-0 text-center text-white">Copyright 2023</p>
+              <p class="m-0 text-center fs-6 text-white">Copyright © 2023 FLORA</p>
 
           </div>
         </footer>

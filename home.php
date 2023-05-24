@@ -14,25 +14,25 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item position-relative active">
       <img class="d-block w-100" src="./assets/images/slider1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h1 style="color: #e72463">caption title</h1>
-        <p>caption description</p>
+      <div class="carousel-caption position-absolute d-md-block" style="top: 20%">
+        <h1 style="color: #e72463; font-size: 5vw; font-family: 'Great Vibes'">Caption Title</h1>
+        <p style="font-size: 2vw">Description</p>
       </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item position-relative">
       <img class="d-block w-100" src="./assets/images/slider2.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>caption title</h5>
-        <p>caption description</p>
+      <div class="position-absolute d-md-block" style="top: 20%; left: 12%">
+        <h1 style="color: #e72463; font-size: 5vw; font-family: 'Great Vibes'">Caption Title</h1>
+        <p style="font-size: 2vw">Description</p>
       </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item position-relative">
       <img class="d-block w-100" src="./assets/images/slider3.jpg" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>caption title</h5>
-        <p>caption description</p>
+      <div class="carousel-caption position-absolute d-md-block" style="top: 20%">
+        <h1 style="color: #e72463; font-size: 5vw; font-family: 'Great Vibes'">Caption Title</h1>
+        <p style="font-size: 2vw">Description</p>
       </div>
     </div>
   </div>
@@ -84,7 +84,7 @@
                     <img class="card-img-top w-100 book-cover" src="<?php echo validate_image($img) ?>" alt="..." />
                     <!-- Product details-->
                     <div class="card-body p-4">
-                        <div class="">
+                        <div class="text-center">
                             <!-- Product name-->
                             <h5 class="fw-bolder"><?php echo $row['title'] ?></h5>
                             <!-- Product price-->
@@ -96,7 +96,7 @@
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
+                            <a class="btn btn-flat px-5 btn-success "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
                         </div>
                         
                     </div>
