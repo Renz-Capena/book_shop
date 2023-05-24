@@ -35,9 +35,9 @@ elseif(isset($_GET['s'])){
 <!-- Header-->
 <header style="background: url(./assets/images/breadcrumb.webp); background-size: cover;" id="main-header">
     <div class="container px-4 px-lg-5 py-5">
-        <div class="text-center text-white">
-            <h1 class="display-4 fw-bolder"><?php echo $title ?></h1>
-            <p class="lead fw-normal text-white-50 mb-0"><?php echo $sub_title ?></p>
+        <div class="text-center" style="color: #FB607F">
+            <h1 class="display-4 fw-bolder" style="font-size: 80px; letter-spacing: 3px; font-family: 'Great Vibes'"><?php echo $title ?></h1>
+            <p class="lead fw-normal mb-0" style="color: #FB607F; font-size: 30px;"><?php echo $sub_title ?></p>
         </div>
     </div>
 </header>
@@ -60,7 +60,7 @@ elseif(isset($_GET['s'])){
         </div>
         <?php endif; ?>
         <div class="<?php echo isset($_GET['c'])? 'col-md-9': 'col-md-10 offset-md-1' ?>">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0" id="navTabs">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" id="book-tab" data-toggle="tab" href="#book" role="tab" aria-controls="book" aria-selected="true">Products</a>
@@ -124,12 +124,12 @@ elseif(isset($_GET['s'])){
                                             <span><b>Price: </b><?php echo $v ?></span>
                                         <?php endforeach; ?>
                                     </div>
-                                    <p class="m-0"><small>By: <?php echo $row['author'] ?></small></p>
+                                    <!-- <p class="m-0"><small>By: <?php echo $row['author'] ?></small></p> -->
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class="text-center">
-                                        <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
+                                        <a class="btn btn-flat px-5 btn-success "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
                                     </div>
                                     
                                 </div>
