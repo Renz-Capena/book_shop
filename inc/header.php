@@ -55,7 +55,7 @@
     </script>
     <script src="<?php echo base_url ?>dist/js/script.js"></script>
     <script src="<?php echo base_url ?>assets/js/scripts.js"></script>
-    <style>
+    <!-- <style>
     #main-header{
         position:relative;
         background: rgb(0,0,0)!important;
@@ -68,7 +68,7 @@
         left:0;
         width:100%;
         height:100%;
-        background-image:url(<?php echo base_url.$_settings->info('cover') ?>);
+        /* background-image:url(<?php echo base_url.$_settings->info('cover') ?>); */
         background-repeat: no-repeat;
         background-size: cover;
         filter: drop-shadow(0px 7px 6px black);
@@ -92,5 +92,5 @@
         filter: drop-shadow(0px 7px 6px black);
         z-index:-1;
     }
- </style>
+ </style> -->
   </head>

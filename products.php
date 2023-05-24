@@ -33,8 +33,8 @@ elseif(isset($_GET['s'])){
 }
 ?>
 <!-- Header-->
-<header class="bg-dark py-5" id="main-header">
-    <div class="container px-4 px-lg-5 my-5">
+<header style="background: url(./assets/images/breadcrumb.webp); background-size: cover;" id="main-header">
+    <div class="container px-4 px-lg-5 py-5">
         <div class="text-center text-white">
             <h1 class="display-4 fw-bolder"><?php echo $title ?></h1>
             <p class="lead fw-normal text-white-50 mb-0"><?php echo $sub_title ?></p>
