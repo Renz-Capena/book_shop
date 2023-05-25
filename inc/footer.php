@@ -58,13 +58,101 @@
     }
   })
 </script>
-<!-- Footer-->
-<footer class="py-3 bg-dark">
-            <div class="container">
-              <p class="m-0 text-center fs-6 text-white">Copyright © 2023 FLORA</p>
+<!-- Footer OLD-->
+<!-- <footer class="py-3 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center fs-6 text-white">Copyright © 2023 FLORA</p>
+      <p>fewf</p>
+    </div>
+  </footer> -->
 
+  <!-- Footer  NEW-->
+
+  <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
+    <div class="container p-4 pb-0">
+      <section class="text-center">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+
+        <hr>
+        
+        <div class="row">
+          <div class="footer_container">
+            <p><i class="fas fa-home mr-3"></i> Manila, Philippine, PH</p>
+            <p><i class="fas fa-envelope mr-3"></i> flora_flowers@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
           </div>
-        </footer>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- <section class="p-3 pt-0">
+        <div class="row text-center">
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="#">Flora.com</a>
+            </div>
+        </div>
+      </section> -->
+
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2023 Copyright:
+              <a class="text-white" href="#"
+                 >floraflowers.com</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    </div>
+  </footer>
+
 
    
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
