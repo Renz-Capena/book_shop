@@ -18,3 +18,18 @@
         margin-block: 10px;
     }
 }
+
+/* data table responsive */
+@media (max-width:500px){
+    .table_parent{
+        overflow-x: scroll;
+    }
+    .table_container{
+        /* border: 1px solid red; */
+        width: 1000px;
+    }
+    .header_create_new{
+        display: grid !important;
+        gap: 10px;
+    }
+}

@@ -1,9 +1,9 @@
 
-<section class="py-5">
+<section class="py-5 my-5">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-end mb-2">
-                <button class="btn btn-outline-dark btn-flat btn-sm" type="button" id="empty_cart">Empty Cart</button>
+                <button class="btn btn-danger" type="button" id="empty_cart">Empty Cart</button>
             </div>
         </div>
         <div class="card rounded-0">
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="d-flex w-100 justify-content-end">
-            <a href="./?p=checkout" class="btn btn-sm btn-flat btn-dark">Checkout</a>
+            <a href="./?p=checkout" class="btn btn-success">Checkout</a>
         </div>
     </div>
 </section>

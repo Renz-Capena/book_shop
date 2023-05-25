@@ -4,10 +4,10 @@
             <div class="card-body">
                 <div class="w-100 justify-content-between d-flex">
                     <h4><b>Update Account Details</b></h4>
-                    <a href="./?p=my_account" class="btn btn btn-dark btn-flat"><div class="fa fa-angle-left"></div> Back to Order List</a>
+                    <a href="./?p=my_account" class="btn btn btn-dark"><div class="fa fa-angle-left"></div> Back to Order List</a>
                 </div>
                     <hr class="border-warning">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mx-auto">
                         <form action="" id="update_account">
                         <input type="hidden" name="id" value="<?php echo $_settings->userdata('id') ?>">
                             <div class="form-group">
@@ -46,7 +46,7 @@
                                 <input type="password" name="cpassword" class="form-control form" value="" placeholder="(Enter value to change password)">
                             </div>
                             <div class="form-group d-flex justify-content-end">
-                                <button class="btn btn-dark btn-flat">Update</button>
+                                <button class="btn btn-primary">Update</button>
                             </div>
                         </form>
                     </div>
