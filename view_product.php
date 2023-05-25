@@ -21,7 +21,7 @@
  }
 ?>
 <section class="py-5">
-    <div class="container px-4 px-lg-5 my-5">
+    <div class="container px-4 px-lg-5 my-5" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
         
         <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6">
@@ -38,7 +38,7 @@
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 p-5">
                 <!-- <div class="small mb-1">SKU: BST-498</div> -->
                 <h1 class="display-5 fw-bolder pb-1 border-bottom border-success pb-1"><?php echo $title ?></h1>
                 <div class="fs-5 mb-4">
