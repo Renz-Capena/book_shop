@@ -108,7 +108,7 @@
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
+                            <a class="btn btn-flat btn-success "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
                         </div>
                         
                     </div>

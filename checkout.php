@@ -17,7 +17,7 @@ $total = 0;
                 <input type="hidden" name="payment_method" value="cod">
                 <input type="hidden" name="paid" value="0">
                 <div class="row row-col-1 justify-content-center">
-                    <div class="col-6">
+                    <div class="w-75 mx-auto">
                     <div class="form-group col mb-0">
                     <label for="" class="control-label">Order Type</label>
                     </div>
@@ -42,7 +42,7 @@ $total = 0;
                         <div class="col my-3">
                         <h4 class="text-muted">Payment Method</h4>
                             <div class="d-flex w-100 justify-content-between">
-                                <button class="btn btn-flat btn-dark">Cash on Delivery</button>
+                                <button class="btn btn-success">Cash on Delivery</button>
                                 <span id="paypal-button"></span>
                             </div>
                         </div>
