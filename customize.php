@@ -1,16 +1,18 @@
 <section>
     <div class="container my-4">
         <h2>Flower customization</h2>
-        <div class='border p-5 mt-3 d-flex align-items-center justify-content-evenly'>
-            <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/06/how-to-draw-a-flower-kate-kyehyun-park-10.jpg" alt="Flower_pic" style='height:50vh'>
+        <div class='border bg-light p-lg-5 mt-3 d-lg-flex align-items-center justify-content-evenly'>
+            <div class="">
+                <img class="img-fluid" src="https://mymodernmet.com/wp/wp-content/uploads/2019/06/how-to-draw-a-flower-kate-kyehyun-park-10.jpg" alt="Flower_pic" style="width: 50vh">
+            </div>
 
-            <div class='border w-50 p-4'>
-                <h2>Start your customization</h2>
-                <br><br>
-                <p>Flower : <b class='fs-5'><span id='flower'></span></b></p>
-                <p>Vase : <b class='fs-5'><span id='base'></span></b></span></p>
-                <p>Packaging : <b class='fs-5'><span id='packaging'></span></b></p>
-                <div class="d-flex mt-5 pt-5">
+            <div class='border w-lg-50 p-lg-4'>
+                <h2 class="text-center mt-3 fw-bold">Start your customization</h2>
+                <br>
+                <p  class="ps-3 ps-lg-0">Flower : <b class='fs-5'><span id='flower'></span></b></p>
+                <p class="ps-3 ps-lg-0">Vase : <b class='fs-5'><span id='base'></span></b></span></p>
+                <p class="ps-3 ps-lg-0">Packaging : <b class='fs-5'><span id='packaging'></span></b></p>
+                <div class="d-flex mt-lg-5 ps-3 pb-3 ps-lg-0 pb-lg-0 pt-lg-5 pt-3">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" name="quantity" />
                     <button class="btn btn-success flex-shrink-0" type="submit">
                         <i class="bi-cart-fill me-1"></i>
@@ -20,7 +22,7 @@
             </div>
         </div>
         
-        <div class=' mt-3'>
+        <div class='d-lg-flex mt-5 justify-content-center'>
             <div class='text-center w-25 m-2'>
                 <h3>Flower</h3>
                 <hr>
