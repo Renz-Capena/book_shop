@@ -1,10 +1,5 @@
-<section class="py-5">
+<section>
     <div class="container">
-        <!-- <div class="card rounded-0">
-            <div class="card-body">
-                <?php include "about.html" ?>
-            </div>
-        </div> -->
         <h2>Flower customization</h2>
         <div class='border p-5 mt-3 d-flex align-items-center justify-content-evenly'>
             <img src="https://mymodernmet.com/wp/wp-content/uploads/2019/06/how-to-draw-a-flower-kate-kyehyun-park-10.jpg" alt="Flower_pic" style='height:50vh'>
@@ -53,7 +48,7 @@
             </div>
 
             <div class='text-center w-25 m-2'>
-                <h3>Base</h3>
+                <h3>Vase</h3>
                 <hr>
                 <div id="carouselExampleControls3" class="carousel border mx-auto" style='width:200px'>
                     <div class="carousel-inner">
