@@ -26,7 +26,7 @@
         <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6">
                 <img class="card-img-top mb-5 mb-md-0 " loading="lazy" id="display-img" src="<?php echo validate_image($img) ?>" alt="..." />
-                <div class="mt-2 row gx-2 gx-lg-3 row-cols-4 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                <div class="d-flex mt-2 mb-4 gx-2 gx-lg-3 row-cols-3 row-cols-md-3 row-cols-xl-4 justify-content-start">
                     <?php 
                         foreach($fileO as $k => $img):
                             if(in_array($img,array('.','..')))
@@ -40,24 +40,25 @@
             </div>
             <div class="col-md-6">
                 <!-- <div class="small mb-1">SKU: BST-498</div> -->
-                <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $title ?></h1>
-                <div class="fs-5 mb-5">
+                <h1 class="display-5 fw-bolder pb-1 border-bottom border-success pb-1"><?php echo $title ?></h1>
+                <div class="fs-5 mb-4">
                 &#8369; <span id="price"><?php echo number_format($inv[0]['price']) ?></span>
                 <br>
-                <span><small><b>Available Stock:</b> <span id="avail"><?php echo $inv[0]['quantity'] ?></span></small></span>
+                <span><small><b style="opacity: 0.8;">Available Stock:</b> <span id="avail"><?php echo $inv[0]['quantity'] ?></span></small></span>
                 </div>
+                <p class="lead"><?php echo stripslashes(html_entity_decode($description)) ?></p>
                 <form action="" id="add-cart">
-                <div class="d-flex">
+                <div class="d-flex mt-4">
                     <input type="hidden" name="price" value="<?php echo $inv[0]['price'] ?>">
                     <input type="hidden" name="inventory_id" value="<?php echo $inv[0]['id'] ?>">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" name="quantity" />
-                    <button class="btn btn-outline-dark flex-shrink-0" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Add to cart
-                    </button>
                 </div>
+                <button class="btn btn-success d-sm-block mx-auto w-100 w-xl-75 mt-5 flex-shrink-0" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Add to cart
+                </button>
                 </form>
-                <p class="lead"><?php echo stripslashes(html_entity_decode($description)) ?></p>
+                
                 
             </div>
         </div>
