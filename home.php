@@ -55,8 +55,9 @@
         height:auto !important;
     }
 </style>
-<section class="py-5">
-    <div class="container px-4 px-lg-5 mt-5">
+<section class="py-3">
+    <div class="container px-4 px-lg-5 mt-5" >
+      <h2 class="mb-4 fw-normal" style="letter-spacing: 2px; font-size: 3vw; color: #FF91A4; border-bottom: 1px solid #FB607F; font-family: 'Great Vibes'">Featured Products</h2>
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php 
                 $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 8 ");
@@ -79,7 +80,7 @@
                     }
             ?>
             <div class="col mb-5">
-                <div class="card product-item">
+                <div class="card product-item" style=" min-height: 434px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                     <!-- Product image-->
                     <img class="card-img-top w-100 book-cover" src="<?php echo validate_image($img) ?>" alt="..." />
                     <!-- Product details-->
@@ -106,3 +107,73 @@
         </div>
     </div>
 </section>
+
+
+<!-- <section class="features3 cid-r7uUPVvk6E" id="features3-7">
+    
+    <div class="container">
+        <h2 class="mbr-section-title align-center mbr-fonts-style display-2">
+            What We Can Offer
+        </h2>
+        
+        <div class="row justify-content-center pt-3">
+            <div class="card p-3 col-12 col-md-6 col-xl-4 col-lg-4">
+                <div class="card-wrap">
+                    <div class="card-img pb-4 align-center">
+                        <span class="mbr-iconfont mbri-hearth"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-center display-5">
+                            Flowers</h4>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">
+                            We will attach a card with the text that you specified when placing the order.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-xl-4 col-lg-4">
+                <div class="card-wrap">
+                    <div class="card-img pb-4 align-center">
+                        <span class="mbr-iconfont mbri-photo"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-center display-5">
+                            Postcards</h4>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">
+                           You can order flowers delivery all over the world from us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-xl-4 col-lg-4">
+                <div class="card-wrap">
+                    <div class="card-img pb-4 align-center">
+                        <span class="mbr-iconfont mbri-smile-face"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-center display-5">
+                            Balloons</h4>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">
+                           Sweet additions. Here you can buy fresh and tasty gifts for loved ones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card p-3 col-12 col-md-6 col-xl-4 col-lg-4">
+                <div class="card-wrap">
+                    <div class="card-img pb-4 align-center">
+                        <span class="mbr-iconfont mbri-star"></span>
+                    </div>
+                    <div class="card-box">
+                        <h4 class="card-title mbr-fonts-style align-center display-5">
+                            Wrapping</h4>
+                        <p class="mbr-text mbr-fonts-style align-center display-7">
+                            Huge selection of roses, chrysanthemums, lilies, and other fresh flowers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
