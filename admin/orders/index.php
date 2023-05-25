@@ -15,9 +15,9 @@
 			<a href="?page=order/manage_order" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
 		</div> -->
 	</div>
-	<div class="card-body">
+	<div class="card-body table_parent_css">
 		<div class="container-fluid">
-        <div class="container-fluid">
+        <div class="container-fluid table_container_css">
 			<table class="table table-bordered table-stripped">
 				<colgroup>
 					<col width="5%">
