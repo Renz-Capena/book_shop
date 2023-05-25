@@ -93,4 +93,5 @@
         z-index:-1;
     }
  </style> -->
+    <link rel="stylesheet" href="inc/footer.css">
   </head>

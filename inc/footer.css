@@ -1,0 +1,20 @@
+.footer_container{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer_container > p{
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin: 0 !important;
+}
+@media (max-width:1000px){
+    .footer_container{
+        display: block;
+    }
+    .footer_container > p{
+        margin: auto;
+        margin-block: 10px;
+    }
+}
