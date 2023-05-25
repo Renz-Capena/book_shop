@@ -61,6 +61,9 @@
             <!-- /.info-box -->
           </div>
         </div>
+
+      <canvas id="myChart"></canvas>
+
 <div class="container">
   <?php 
     $files = array();
@@ -100,7 +103,6 @@
   <!-- New -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
-  <canvas id="myChart" style="width:100%;max-width:600px;border: 1px solid red"></canvas>
 
 
   <?php
@@ -156,12 +158,18 @@
       legend: {display: false},
       title: {
         display: true,
-        text: "Sales report"
+        text: "Sales report",
+        fontColor: "white"
       },
       scales: {
         yAxes: [{
           ticks: {
             beginAtZero: true
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: "white" // Set the font color of the labels to white
           }
         }]
       }
