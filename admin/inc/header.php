@@ -54,4 +54,5 @@
     </script>
     <script src="<?php echo base_url ?>dist/js/script.js"></script>
 
+    <link rel="stylesheet" href="style.css">
   </head>

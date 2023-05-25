@@ -21,8 +21,8 @@ if($order->num_rows > 0){
     redirect('admin/?page=orders');
 }
 ?>
-<div class="card card-outline card-primary">
-    <div class="card-body">
+<div class="card card-outline card-primary table_parent_css">
+    <div class="card-body table_container_css">
         <div class="conitaner-fluid">
             <p><b>Client Name: <?php echo $client ?></b></p>
             <?php if($order_type == 1): ?>

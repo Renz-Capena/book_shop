@@ -5,20 +5,33 @@
 </head>
 <body>
 
-<div class="card card-outline card-info">
+<div class="card card-outline card-info mt-5 p-5">
 	<div class="card-header">
-		<h3 class="card-title">Message</h3>
+		<!-- <h3 class="card-title text-center">Message</h3> -->
+        <h3 class='text-center'>Message</h3>
 	</div>
-	<form method="post">
-    <label>Contact number</label>
-    <input type="text" name="num">  
-    <br><br>
-    <label>Enter Message</label>
-    <input type="text" name="message">
+	<!-- <form method="post">
+        <label>Contact number</label>
+        <input type="text" name="num">  
+        <br><br>
+        <label>Enter Message</label>
+        <input type="text" name="message">
 
-    <input type="submit" name="submit">
+        <input type="submit" name="submit">
+    </form> -->
 
-</form>
+    <form class='form_msg' method='post'>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Contact number</label>
+            <input type="number" class="form-control" id='exampleInputEmail1' name='num' aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Message</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message here...">
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        <input type="submit" name="submit" class='btn btn-primary'>
+    </form>
 </div>
 </body>
 </html>

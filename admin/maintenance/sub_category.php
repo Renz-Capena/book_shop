@@ -4,15 +4,15 @@
 </script>
 <?php endif;?>
 <div class="card card-outline card-primary">
-	<div class="card-header">
+	<div class="card-header header_create_new">
 		<h3 class="card-title">List of Sub Categories</h3>
 		<div class="card-tools">
 			<a href="?page=maintenance/manage_sub_category" class="btn btn-flat btn-primary"><span class="fas fa-plus"></span>  Create New</a>
 		</div>
 	</div>
-	<div class="card-body">
+	<div class="card-body table_parent_css">
 		<div class="container-fluid">
-        <div class="container-fluid">
+        <div class="container-fluid table_container_css">
 			<table class="table table-bordered table-stripped">
 				<colgroup>
 					<col width="5%">
