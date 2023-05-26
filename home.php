@@ -54,6 +54,108 @@
         object-fit:contain !important;
         height:auto !important;
     }
+
+
+
+
+.demo{ 
+    background-color: #FADADD; 
+    color: darkgreen;
+    margin-bottom: 5vw;
+}
+.about-us{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-block: 30px;
+}
+.about-us .pic{
+    width: 22%;
+    padding: 20px 0;
+    margin: 0 6% 0 2%;
+    position: relative;
+    z-index: 1;
+}
+.about-us .pic:before,
+.about-us .pic:after{
+    content: "";
+    width: 130px;
+    height: 150px;
+    background: #FF91A4;
+    position: absolute;
+    z-index: -1;
+}
+.about-us .pic:before{
+    top: 7px;
+    right: -12px;
+}
+.about-us .pic:after{
+    bottom: 7px;
+    left: -12px;
+}
+.about-us .pic img{
+    width: 100%;
+    height: auto;
+    border: 3px solid #FB607F;
+}
+.about-us .about-us-content{
+    width: 70%;
+    
+}
+.about-us .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 65px;
+    padding-left: 15px;
+}
+.about-us .post{
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    opacity: 0.8;
+}
+.about-us .description{
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 0;
+    position: relative;
+}
+.about-us .description:before,
+.about-us .description:after{
+    font-size: 17px;
+    color: #e1c37d;
+    position: relative;
+}
+
+@media only screen and (max-width: 990px){
+    .about-us{ text-align: center; }
+    .about-us .pic{
+        width: 200px;
+        margin: 0 auto;
+    }
+    .about-us .pic:before,
+    .about-us .pic:after{
+        width: 80px;
+        height: 100px;
+    }
+    .about-us .about-us-content{
+        width: 100%;
+    }
+    .about-us .title{
+        padding: 15px 0 0 0;
+    }
+    .about-us .post{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
 </style>
 <section class="py-3">
     <div class="container px-4 px-lg-5 mt-5" >
@@ -107,6 +209,30 @@
         </div>
     </div>
 </section>
+
+
+<div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div id="about-us-slider" class="owl-carousel"> -->
+                    <div class="about-us">
+                        <div class="pic">
+                            <img src="./assets/images/roses.jpg" alt="">
+                        </div>
+                        <div class="about-us-content">
+                            <h3 class="title">About us</h3>
+                            <span class="post">what we do</span>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor nibh, semper at pretium vitae, tincidunt non risus. Aenean mattis sit amet ex nec venenatis. Pellentesque tempus pellentesque efficitur. Nulla commodo bibendum quam, at imperdiet orci congue non. Maecenas interdum.
+                            </p>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- <section class="features3 cid-r7uUPVvk6E" id="features3-7">
