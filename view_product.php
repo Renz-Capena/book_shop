@@ -24,7 +24,7 @@
     <div class="container px-4 px-lg-5 my-5 bg-light" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
         
         <div class="row gx-4 gx-lg-5 align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-6 pt-4">
                 <img class="card-img-top mb-5 mb-md-0 " loading="lazy" id="display-img" src="<?php echo validate_image($img) ?>" alt="..." />
                 <div class="d-flex mt-2 mb-4 gx-2 gx-lg-3 row-cols-3 row-cols-md-3 row-cols-xl-4 justify-content-start">
                     <?php 
