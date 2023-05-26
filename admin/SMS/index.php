@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<div class="card card-outline card-info mt-5 p-5">
+<div class="card card-outline card-info mt-5 p-lg-5">
 	<div class="card-header">
 		<!-- <h3 class="card-title text-center">Message</h3> -->
         <h3 class='text-center'>Message</h3>
@@ -27,7 +27,8 @@
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Message</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message here...">
+            <!-- <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Message here..."> -->
+            <textarea name="" class='form-control' id="" style='resize:none;height:200px'></textarea>
         </div>
         <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
         <input type="submit" name="submit" class='btn btn-primary'>

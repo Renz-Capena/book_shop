@@ -57,7 +57,7 @@
 </style>
 <section class="py-3">
     <div class="container px-4 px-lg-5 mt-5" >
-      <h2 class="mb-4 fw-normal" style="letter-spacing: 2px; font-size: 3vw; color: #FF91A4; border-bottom: 1px solid #FB607F; font-family: 'Great Vibes'">Featured Products</h2>
+      <h2 class="mb-4 fw-normal text-center py-lg-4 my-lg-5" style="letter-spacing: 2px; font-size: 3vw; color: red; border-bottom: 1px solid ; font-family: 'Great Vibes'">Featured Products</h2>
         <div class="row gx-4 gx-lg-5 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <?php 
                 $products = $conn->query("SELECT * FROM `products` where status = 1 order by rand() limit 8 ");
