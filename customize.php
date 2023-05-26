@@ -12,7 +12,18 @@
                 <p  class="ps-3 ps-lg-0">Flower : <b class='fs-5'><span id='flower'></span></b></p>
                 <p class="ps-3 ps-lg-0">Vase : <b class='fs-5'><span id='base'></span></b></span></p>
                 <p class="ps-3 ps-lg-0">Packaging : <b class='fs-5'><span id='packaging'></span></b></p>
-                <div class="d-flex mt-lg-5 ps-3 pb-3 ps-lg-0 pb-lg-0 pt-lg-5 pt-3">
+                <div class="input-group input-group-sm mb-3 w-75 ps-3 ps-lg-0">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Date</span>
+                    </div>
+                    <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="mb-3 w-75 ps-3 ps-lg-0">
+                    <label for="">Preferred</label>
+                    <!-- <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"> -->
+                    <textarea name="" class='form-control' id="" style='resize:none'></textarea>
+                </div>
+                <div class="d-flex mt-lg-5 ps-3 pb-3 ps-lg-0 pb-lg-0">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" name="quantity" />
                     <button class="btn btn-success flex-shrink-0" type="submit">
                         <i class="bi-cart-fill me-1"></i>

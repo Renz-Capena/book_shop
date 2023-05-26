@@ -1,3 +1,6 @@
+body{
+    background-color: #ffbcc7;
+}
 .footer_container{
     /* border: 1px solid red; */
     display: flex;
@@ -31,5 +34,12 @@
     .header_create_new{
         display: grid !important;
         gap: 10px;
+    }
+    .table_parent_css{
+        overflow-x: scroll;
+    }
+    .table_container_css{
+        /* border: 1px solid red; */
+        width: 1000px;
     }
 }

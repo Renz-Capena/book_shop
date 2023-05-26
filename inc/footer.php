@@ -68,7 +68,7 @@
 
   <!-- Footer  NEW-->
 
-  <footer class="text-center text-lg-start text-white" style="background-color: #4EA217">
+  <footer class="text-center text-lg-start text-white" style="background-color: #4d5b70">
     <div class="container p-4 pb-0">
       <section class="text-center">
         <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
