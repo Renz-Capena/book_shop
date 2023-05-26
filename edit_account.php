@@ -1,10 +1,10 @@
-<section class="py-5">
+<section class="py-5" style="background: #FADADD">
     <div class="container">
         <div class="card rounded-0">
             <div class="card-body">
                 <div class="w-100 justify-content-between d-flex">
-                    <h4><b>Update Account Details</b></h4>
-                    <a href="./?p=my_account" class="btn btn btn-dark"><div class="fa fa-angle-left"></div> Back to Order List</a>
+                    <h4 class="text-warning"><b>Update Account Details</b></h4>
+                    <a href="./?p=my_account" class="btn btn btn-success"><div class="fa fa-angle-left"></div> Back to Order List</a>
                 </div>
                     <hr class="border-warning">
                     <div class="col-md-6 mx-auto">
@@ -46,7 +46,7 @@
                                 <input type="password" name="cpassword" class="form-control form" value="" placeholder="(Enter value to change password)">
                             </div>
                             <div class="form-group d-flex justify-content-end">
-                                <button class="btn btn-primary">Update</button>
+                                <button class="btn btn-info">Update</button>
                             </div>
                         </form>
                     </div>

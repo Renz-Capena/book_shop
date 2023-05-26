@@ -1,5 +1,5 @@
-<section>
-    <div class="container my-4">
+<section style="background: #FADADD">
+    <div class="container py-5">
         <h2>Flower customization</h2>
         <div class='border bg-light p-lg-5 mt-3 d-lg-flex align-items-center justify-content-evenly'>
             <div class="">

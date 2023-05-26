@@ -115,7 +115,7 @@ if($order->num_rows > 0){
 </div>
 <?php if(isset($_GET['view'])): ?>
 <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 </div>
 <style>
     #uni_modal>.modal-dialog>.modal-content>.modal-footer{

@@ -1,4 +1,4 @@
-<section class="py-5">
+<section class="py-5" style="background: #FADADD">
     <div class="container">
         <div class="card">
             <div class="card-body">
