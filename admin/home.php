@@ -61,8 +61,10 @@
             <!-- /.info-box -->
           </div>
         </div>
-      
-        <canvas id="myChart"></canvas>
+        
+        <!-- <div class="chart-wrapper"> -->
+          <canvas id="myChart"></canvas>
+        <!-- </div> -->
 
 <div class="container">
   <?php 
