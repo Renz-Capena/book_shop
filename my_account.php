@@ -1,10 +1,10 @@
     
-<section class="py-2 my-5">
+<section class="" style="background: #FADADD; padding-block: 100px 200px">
     <div class="container">
         <div class="card rounded-0">
             <div class="card-body">
                 <div class="w-100 justify-content-between d-flex header_create_new">
-                    <h4><b>Orders</b></h4>
+                    <h4 class="text-danger"><b>Orders</b></h4>
                     <a href="./?p=edit_account" class="btn btn-success"><div class="fa fa-user-cog"></div> Manage Account</a>
                 </div>
                     <hr class="border-warning">

@@ -58,7 +58,7 @@
 
 
 
-.demo{ 
+.wrapper-home{ 
     background-color: #FADADD; 
     color: darkgreen;
     margin-bottom: 5vw;
@@ -134,7 +134,6 @@
 }
 
 @media only screen and (max-width: 990px){
-    .about-us{ text-align: center; }
     .about-us .pic{
         width: 200px;
         margin: 0 auto;
@@ -154,6 +153,16 @@
         padding: 0;
         margin-bottom: 10px;
     }
+    .about-us .description{
+    padding-left: unset;
+}
+}
+
+@media only screen and (max-width: 990px){
+    .about-us{
+    flex-direction: column;
+    text-align: center;
+}
 }
 
 </style>
@@ -211,7 +220,7 @@
 </section>
 
 
-<div class="demo">
+<div class="wrapper-home">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

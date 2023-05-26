@@ -110,8 +110,8 @@ elseif(isset($_GET['s'])){
                                     $inv[] = number_format($ir['price']);
                                 }
                         ?>
-                        <div class="col-md-12 mb-5">
-                            <div class="card product-item">
+                        <div class="col-md-12 mb-5" >
+                            <div class="card product-item ms-3 mt-2" style=" min-height: 434px; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
                                 <!-- Product image-->
                                 <img class="card-img-top w-100" src="<?php echo validate_image($img) ?>" loading="lazy" alt="..." />
                                 <!-- Product details-->

@@ -61,8 +61,8 @@
             <!-- /.info-box -->
           </div>
         </div>
-
-      <canvas id="myChart"></canvas>
+      
+        <canvas id="myChart"></canvas>
 
 <div class="container">
   <?php 
@@ -159,17 +159,18 @@
       title: {
         display: true,
         text: "Sales report",
-        fontColor: "white"
+        fontSize: 30
       },
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero: true
+            beginAtZero: true,
+            fontSize: 20
           }
         }],
         xAxes: [{
           ticks: {
-            fontColor: "white" // Set the font color of the labels to white
+            fontSize: 20
           }
         }]
       }
