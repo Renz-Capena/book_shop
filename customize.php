@@ -23,7 +23,10 @@
                     <!-- <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"> -->
                     <textarea name="" class='form-control' id="" style='resize:none'></textarea>
                 </div>
-                <div class="d-flex mt-lg-5 ps-3 pb-3 ps-lg-0 pb-lg-0">
+                <div class='ps-4 ps-lg-0 fs-3'>
+                    <b><p>₱200</p></b>
+                </div>
+                <div class="d-flex mt-lg-3 ps-3 pb-3 ps-lg-0 pb-lg-0">
                     <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" name="quantity" />
                     <button class="btn btn-success flex-shrink-0" type="submit">
                         <i class="bi-cart-fill me-1"></i>

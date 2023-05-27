@@ -63,8 +63,11 @@
         </div>
         
         <!-- <div class="chart-wrapper"> -->
-          <canvas id="myChart"></canvas>
+          <!-- <canvas id="myChart"></canvas> -->
         <!-- </div> -->
+        <div class='chart_container'>
+          <canvas id="myChart"></canvas>
+        </div>
 
 <div class="container">
   <?php 
@@ -136,50 +139,93 @@
 
   <script>
 
-  const category = [];
-  const categoryTemp = document.querySelectorAll("#category");
-  categoryTemp.forEach(e => category.push(e.value))
+  // const category = [];
+  // const categoryTemp = document.querySelectorAll("#category");
+  // categoryTemp.forEach(e => category.push(e.value))
 
-  const quantity = [];
-  const quantityTemp = document.querySelectorAll("#quantity");
-  quantityTemp.forEach(e => quantity.push(e.value))
+  // const quantity = [];
+  // const quantityTemp = document.querySelectorAll("#quantity");
+  // quantityTemp.forEach(e => quantity.push(e.value))
 
-  const barColors = Array(category.length).fill("#34a2d1");
+  // const barColors = Array(category.length).fill("#7ac969");
 
 
-  new Chart("myChart", {
-    type: "bar",
-    data: {
-      labels: category,
-      datasets: [{
-        backgroundColor: barColors,
-        data: quantity,
-      }]
+  // new Chart("myChart", {
+  //   type: "bar",
+  //   data: {
+  //     labels: category,
+  //     datasets: [{
+  //       backgroundColor: barColors,
+  //       data: quantity,
+  //     }]
+  //   },
+  //   options: {
+  //     legend: {display: false},
+  //     title: {
+  //       display: true,
+  //       text: "Sales report",
+  //       fontSize: 30
+  //     },
+  //     scales: {
+  //       yAxes: [{
+  //         ticks: {
+  //           beginAtZero: true,
+  //           fontSize: 20
+  //         }
+  //       }],
+  //       xAxes: [{
+  //         ticks: {
+  //           fontSize: 20
+  //         }
+  //       }]
+  //     }
+
+  //   }
+  // });
+const category = [];
+const categoryTemp = document.querySelectorAll("#category");
+categoryTemp.forEach(e => category.push(e.value))
+
+const quantity = [];
+const quantityTemp = document.querySelectorAll("#quantity");
+quantityTemp.forEach(e => quantity.push(e.value))
+
+const barColors = Array(category.length).fill("#7ac969");
+
+const ctx = document.getElementById("myChart").getContext("2d");
+const myChart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: category,
+    datasets: [{
+      backgroundColor: barColors,
+      data: quantity,
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: { display: false },
+    title: {
+      display: true,
+      text: "Sales report",
+      fontSize: 30
     },
-    options: {
-      legend: {display: false},
-      title: {
-        display: true,
-        text: "Sales report",
-        fontSize: 30
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: true,
-            fontSize: 20
-          }
-        }],
-        xAxes: [{
-          ticks: {
-            fontSize: 20
-          }
-        }]
-      }
-
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          fontSize: 20
+        }
+      }],
+      xAxes: [{
+        ticks: {
+          fontSize: 20
+        }
+      }]
     }
-  });
-
+  }
+});
 
   </script>
 

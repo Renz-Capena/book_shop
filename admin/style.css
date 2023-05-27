@@ -1,3 +1,19 @@
+.active{
+    background-color: rgb(255, 206, 203) !important;
+    color: black !important;
+}
+.brand_css{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 206, 203) !important;
+}
+.brand_css > span{
+    /* border: 1px solid red; */
+    font-weight: bolder!important;
+    letter-spacing: 1.5px;
+}
+
 .form_msg{
     /* border: 1px solid red; */
     width: 50%;
@@ -5,14 +21,18 @@
     margin-top: 30px;
     padding: 10px;
 }
-#myChart{
-    /* border: 1px solid red; */
+/* #myChart{
     margin-top: 20px;
     width: 75% !important;
     height: 400px !important;
-    /* background-color: rgba(255, 255, 255, 0.192); */
     box-shadow: 0px 0px 5px black;
     padding: 10px;
+} */
+
+.chart_container{
+    position: relative; 
+    height: 60vh; 
+    width: 60vw;
 }
 
 @media (max-width:500px){
@@ -41,10 +61,13 @@
         display: grid;
         gap: 10px;
     }
-    #myChart{
+    /* #myChart{
+        margin: unset;
         width: 100% !important;
-        height: 250px !important;
+        height: 350px !important;
         box-shadow: 0px 0px 2px black;
-
+    } */
+    .chart_container{
+        width: 80vw;
     }
 }
