@@ -1,5 +1,5 @@
     
-<section class="" style="background: #FADADD; padding-block: 100px 200px">
+<section class="" style="background-color: #fadadd; background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%); padding-block: 100px 200px">
     <div class="container">
         <div class="card rounded-0">
             <div class="card-body">

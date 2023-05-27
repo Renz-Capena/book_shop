@@ -12,7 +12,7 @@
       <div class="content-wrapper pt-3" style="min-height: 567.854px; background: #feeaee;">
      
         <!-- Main content -->
-        <section class="content  text-dark">
+        <section class="content pt-5 pt-lg-0 text-dark">
           <div class="container-fluid">
             <?php 
               if(!file_exists($page.".php") && !is_dir($page)){
