@@ -1,5 +1,5 @@
 
-<section class="py-5 my-5">
+<section class="py-5 my-5" style="background-color: #fadadd; background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%);">
     <div class="container">
         <div class="row">
             <div class="col d-flex justify-content-end mb-2">

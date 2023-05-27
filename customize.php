@@ -1,4 +1,4 @@
-<section style="background: #FADADD">
+<section class="text-dark" style="background-color: #fadadd; background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%);"> 
     <div class="container py-5">
         <h2>Flower customization</h2>
         <div class='border bg-light p-lg-5 mt-3 d-lg-flex align-items-center justify-content-evenly'>

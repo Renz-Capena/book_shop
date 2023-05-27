@@ -6,11 +6,11 @@ $total = 0;
         $total += $row['price'] * $row['quantity'];
     endwhile;
 ?>
-<section class="py-5">
+<section class="py-5" style="background-color: #fadadd; background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%);">
     <div class="container">
         <div class="card rounded-0">
             <div class="card-body"></div>
-            <h3 class="text-center"><b>Checkout</b></h3>
+            <h3 class="text-center text-success"><b>Checkout</b></h3>
             <hr class="border-dark">
             <form action="" id="place_order">
                 <input type="hidden" name="amount" value="<?php echo $total ?>">

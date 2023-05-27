@@ -59,7 +59,8 @@
 
 
 .wrapper-home{ 
-    background-color: #FADADD; 
+    background-color: #fadadd; 
+    background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%);
     color: darkgreen;
     margin-bottom: 5vw;
 }
@@ -103,12 +104,15 @@
 }
 .about-us .title{
     display: block;
-    font-size: 18px;
+    font-size: 38px;
     font-weight: 600;
     margin: 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding-top: 65px;
     padding-left: 15px;
+    font-family: 'Great Vibes';
+    letter-spacing: 2px;
+    margin-bottom: -10px;
 }
 .about-us .post{
     display: block;
@@ -232,7 +236,7 @@
                         <div class="about-us-content">
                             <h3 class="title">About us</h3>
                             <span class="post">what we do</span>
-                            <p class="description">
+                            <p class="description text-dark">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor nibh, semper at pretium vitae, tincidunt non risus. Aenean mattis sit amet ex nec venenatis. Pellentesque tempus pellentesque efficitur. Nulla commodo bibendum quam, at imperdiet orci congue non. Maecenas interdum.
                             </p>
                         </div>

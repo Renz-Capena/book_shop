@@ -20,7 +20,7 @@
     }
  }
 ?>
-<section class="py-5" style="background: #FADADD">
+<section class="py-5" style="background-color: #fadadd; background-image: linear-gradient(315deg, #f7c4c8 0%, #fadadd 54%);">
     <div class="container px-4 px-lg-5 my-5 bg-light" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;">
         
         <div class="row gx-4 gx-lg-5 align-items-center">
